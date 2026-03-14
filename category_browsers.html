@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Browser Directory | Developer Resources</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#256af4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 lg:px-20 py-3">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">language</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">BrowserHub</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-primary text-sm font-medium" href="#">Categories</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Developers</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Resources</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<div class="hidden sm:flex flex-col min-w-[240px] max-w-sm">
+<div class="relative flex w-full items-center">
+<span class="material-symbols-outlined absolute left-3 text-slate-400">search</span>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 py-2 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-slate-400 transition-all" placeholder="Search browsers, engines, tools..." value=""/>
+</div>
+</div>
+<button class="flex items-center justify-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="aspect-square rounded-full size-10 border-2 border-primary/20 bg-cover bg-center" data-alt="User profile avatar circle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2g-Tf7k0OP6QbS6SYjkPlRklqIV7KfzprRuP5x92Jza6HVj3SSGPvOuDHwHegfooLSksi4VmYZNtLSg_NL9ZR4RrSDqjzQQO9afmNX7qi0PLqNE7S5q4sLzZJD0DTPXbWYOVQSCls8QEndxeV200LEOrChcK-KZHBVzHVYRKrcz431Y_9GAgrhuGnJ2y3YVrF8Q92RqRxVT0VZDoGaA28Zwl2iHyOzcMg3ZGX8P2Olt8-GRBJDbKJ6DpsdsBCDEGiPtUtCNVsdmI");'></div>
+</div>
+</div>
+</header>
+<div class="flex flex-1 max-w-[1440px] mx-auto w-full">
+<aside class="hidden lg:flex w-64 flex-col border-r border-slate-200 dark:border-slate-800 p-6 gap-8 sticky top-16 h-[calc(100vh-64px)] overflow-y-auto">
+<div>
+<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Navigation</h3>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-medium" href="#">
+<span class="material-symbols-outlined">public</span>
+<span class="text-sm">All Browsers</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">code</span>
+<span class="text-sm">Open Source</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">shield</span>
+<span class="text-sm">Privacy Focused</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="text-sm">Gaming</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">devices</span>
+<span class="text-sm">Mobile First</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Rendering Engines</h3>
+<div class="flex flex-col gap-1">
+<label class="flex items-center gap-3 px-3 py-2 cursor-pointer group">
+<input checked="" class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary bg-transparent" type="checkbox"/>
+<span class="text-sm text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Blink / Chromium</span>
+</label>
+<label class="flex items-center gap-3 px-3 py-2 cursor-pointer group">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary bg-transparent" type="checkbox"/>
+<span class="text-sm text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Gecko</span>
+</label>
+<label class="flex items-center gap-3 px-3 py-2 cursor-pointer group">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary bg-transparent" type="checkbox"/>
+<span class="text-sm text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">WebKit</span>
+</label>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-800">
+<div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+<p class="text-xs font-bold text-primary uppercase mb-1">Developer Pro</p>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Get access to performance benchmarks and comparison tools.</p>
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90 transition-colors">Upgrade Now</button>
+</div>
+</div>
+</aside>
+<main class="flex-1 p-6 lg:p-10">
+<div class="flex flex-col gap-2 mb-8">
+<nav class="flex items-center gap-2 text-xs font-medium text-slate-500 uppercase tracking-widest">
+<a class="hover:text-primary" href="#">Software</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Web Browsers</span>
+</nav>
+<div class="flex flex-wrap items-end justify-between gap-6">
+<div class="max-w-2xl">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl lg:text-5xl font-black leading-tight tracking-tight">Web Browsers</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg mt-3 leading-relaxed">
+                                Curated directory of the most influential web engines and browsers shaping the modern internet experience.
+                            </p>
+</div>
+<button class="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-primary/30 transition-all">
+<span class="material-symbols-outlined text-xl">add</span>
+<span>Submit Browser</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 mb-10 overflow-x-auto pb-2">
+<button class="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 text-sm font-medium hover:border-primary transition-colors">
+<span>Platform: Desktop</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 text-sm font-medium hover:border-primary transition-colors">
+<span>License: All</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 text-sm font-medium hover:border-primary transition-colors">
+<span>Sort: Popular</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<div class="ml-auto flex items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-lg">
+<button class="p-1.5 rounded-md bg-white dark:bg-slate-700 shadow-sm text-primary">
+<span class="material-symbols-outlined block">grid_view</span>
+</button>
+<button class="p-1.5 rounded-md text-slate-400">
+<span class="material-symbols-outlined block">list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Chrome Logo" class="w-full h-full object-contain" data-alt="Google Chrome colorful circular logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd8beCYqem-9cZFgqOCcmEUVgDuc4GzGz808gwY1mWdmsLGcpdH19ajgs4FxzloEB50Cme8cP8TmqXkYqwddoEBmYqg3XGeTkqv8zg6rtrmbRNDeRZz_EzjmTt1AtvxlAlP9sFyxL-L8oya5wVRn1iYNfpH2IcAXMstt79eCHSy1djW6xQcie33skL6oUyhu203ol-8St0nrFcmowj4kQx-_-6c5mHuc0ErMg8BTtvYupHHCv-Tn7WtvYKNT-ZHEz84atZct-J-AA"/>
+</div>
+<span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Popular</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Google Chrome</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">A fast, secure, and free web browser, built for the modern web with Google smarts built in.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Google</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2008</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Firefox Logo" class="w-full h-full object-contain" data-alt="Mozilla Firefox fire fox mascot logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38fkgO9_X0i11E2_-qTW3hu_mQRv8khHf7qmVEt1QtDmoD6VvlqE7qIsFAV1q5-QrcdpCBMsP1E89jTOMtSZ-_h4S7yY9XCy30024GXkF6vKkSAuNDPTpB98-7g9uhHqFKfrPfUTqY27RXB-0_ibLBfz8bQSTYLjYJhtCoJZyyD5d-2azmoA4xLS43mT2qac1ZQIhvlAXASrIfTHLf45BlCSpJZihwmpNejuNmlza0_LpF_C_DprkTQVeScs0-Yw9ZQAuKsj7lKE"/>
+</div>
+<span class="bg-emerald-500/10 text-emerald-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Open Source</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Mozilla Firefox</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">The independent, privacy-first browser that doesn't track you or sell your data.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Mozilla Foundation</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2004</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Safari Logo" class="w-full h-full object-contain" data-alt="Apple Safari blue compass logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfhHJwrdatcGu1zPuHeM58AXOetvYYW2-kqvil-kbx7oxqQ77zjXyO9_Pz_CtCnVzGK8lpZLV_g8bEcs6X7TnD8ZFNeMSfI66WPVgI4nP8iQ6qM_C8CBRNH-zvEY81TGE4LPMPBD9-E3zTHHVuhKjd7QFlbdgBvdjR8drSKMjjs5EJPy4VHu3DqeTqrgSojadsv51p5tvjvx__2IuQ_Xb-Tc8BuwYA3mhCwMD1fU0xpeV2omySzxY-TXex_GIMsBLR5jhrxvSRMEg"/>
+</div>
+<span class="bg-blue-500/10 text-blue-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Ecosystem</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Apple Safari</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">Optimized for Apple devices with industry-leading performance and energy efficiency.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Apple Inc.</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2003</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Edge Logo" class="w-full h-full object-contain" data-alt="Microsoft Edge blue green wave logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWwwmUSxwnpQKEXNJhrtwc72Ow7lLHovJEld_nKznRKzA-vczDwE34TPXC5CV7me98CXWc3HecfNqSgSW9ipqUXOYgp6ac5C8rLee84PEVrk9Syo-CXbJ272qtCJ-3QtUSYzxK5tqcNihrJO_liJ62kqSBablWWaA-SK_WKaVr0mcD_vSpeEhG-rSGCBvRiM3MWqheagvuZpIa_r5g5ODH_JbMmFyr_zNW97m_MRAEU6Ir4zy7EezlnzbV9kAilLcWmsRtPRT6h7w"/>
+</div>
+<span class="bg-indigo-500/10 text-indigo-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Enterprise</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Microsoft Edge</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">The browser for business with world-class performance, security, and productivity features.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Microsoft</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2015</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Opera Logo" class="w-full h-full object-contain" data-alt="Opera red O letter logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkl3SAPaEOjcec1lF7W8PU_mvyLlBWjptCGNE7_2o2luGSmT3GidPbh2xARDDudIGgCbpWi3AQX-w0bePGJnnTcHw6IAhqegUZ3TsApRWWFCIb-LN7RSnPOhRHRP4Y6G7rWDW0aU0g8ZEhDiCRpwLQndzqgQf6z0ZCNtDz5wSRFNOUSujMNgkA9lWTdBCqA45RjzNQdArwo8KL030GcHpLIFHiNp_s22ejAgf4nqKI_JLkoqU-Vt5h155vzLY3kV1aHA9to8ao5Fk"/>
+</div>
+<span class="bg-red-500/10 text-red-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Innovative</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Opera</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">A personal web browser with a built-in VPN, ad blocker, and integrated social sidebars.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Opera Software</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">1995</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Brave Logo" class="w-full h-full object-contain" data-alt="Brave lion orange head logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV0Tn-PLM4Hc5s7BCUhh1e0B6OIrAaZhdKRKJ5kZ5eSLlVef-NY3s7c7PvlcNg7vuMcWY6Wcbm44ISlWeUw2RS8Ma_s4L8OCyb-_SI9ajxlAbaJzvvRzUIOu-SDAY8090d2D9NtjWaf54XxNCUpDR_kaMkpHIa0zGNen9DQcG8vbMWNmL_rY8iw-yI0jvT4aPrmNqkxLfFk_IN9_6BIQpPs6LxbuBvX-yyLH4FmsAld3wyvrfVgdJgckGuetD-pysGmeJYxYbxOTk"/>
+</div>
+<span class="bg-orange-500/10 text-orange-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Shields Up</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Brave</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">Browsing with three times the speed of Chrome and privacy-focused advertising rewards.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Brave Software</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2016</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Vivaldi Logo" class="w-full h-full object-contain" data-alt="Vivaldi red V icon logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD760INmmGA243LFrGHn8YiKGQ5Z0XEVfjxh1jEjxsZFa79jE_Eqa-PjBfQtOP0wkFjjGWLvLDXn29CAkiFYB1WcdOAdAb10XeExQzp2Rjdg80IsPr-ykVKMYnfdvNJo7UmGHoYW1f2KxsYSPoWnqQrvikGjfi0bpj2q-Jer-vjBttM9VSgnir-PVN56lJ2UDZOuxPOHnLGo3hbGkjkeDVmz-oaZwbPO2O3ixpZcluT3_Yp_l1jeZL0cK5Afzacnb58AqspsL4_pLw"/>
+</div>
+<span class="bg-slate-500/10 text-slate-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Power User</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Vivaldi</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">An extremely customizable browser with advanced tab tiling and built-in note taking tools.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">Vivaldi Technologies</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2016</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div class="w-14 h-14 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center p-2.5">
+<img alt="Tor Logo" class="w-full h-full object-contain" data-alt="Tor onion purple logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWav_YUs3PVWMGMJrkK35OiVJeFCiy8KwD_PzU6co4YpJCtmtoq8R1EpvZuOwIWM5v2eu4PIu52Fzc23QTGPB5-Ioe3aMFo-ykicY5GDGZQ4Etq3SZk976cazhvyqulgC8_WKDP_t0PXTJPR01m_zvhq05vPw-QI4VgD2Smn_2PceZGnPmrcU0rzoF3kMAue0qOAcfbQFVOk4mi8ItMWxXNVqubx7Cl40eYLAuJfcgwJSQ_GH0kbLqWDA5KAUmtgyS2MZvYsHEkF0"/>
+</div>
+<span class="bg-purple-500/10 text-purple-500 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Stealth</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Tor Browser</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-6">Defend yourself against tracking, surveillance, and censorship with anonymous routing.</p>
+<div class="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Creator</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">The Tor Project</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="text-slate-400">Initial Release</span>
+<span class="text-slate-900 dark:text-slate-100 font-semibold">2002</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="px-8 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-white dark:hover:bg-slate-800 transition-all">
+                        Load More Browsers
+                    </button>
+</div>
+</main>
+</div>
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-12 px-4 lg:px-20 bg-white dark:bg-slate-950">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-2xl">language</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold tracking-tight">BrowserHub</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
+                        A community-driven resource for professional web developers and enthusiasts.
+                    </p>
+</div>
+<div class="flex gap-12">
+<div class="flex flex-col gap-3">
+<span class="text-slate-900 dark:text-slate-100 font-bold text-sm">Directory</span>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Most Popular</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Developer Tools</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Benchmarking</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-slate-900 dark:text-slate-100 font-bold text-sm">Company</span>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">About Us</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Terms</a>
+</div>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">hub</span>
+</a>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-slate-100 dark:border-slate-900 text-center">
+<p class="text-slate-400 text-xs">© 2024 BrowserHub Directory. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

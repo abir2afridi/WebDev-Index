@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#256af4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Google Chrome - TechDoc</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-3 lg:px-20">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">TechDoc</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Technologies</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Guides</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Community</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">API</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="hidden sm:flex items-center relative min-w-[200px] lg:min-w-[300px]">
+<span class="material-symbols-outlined absolute left-3 text-slate-400">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-lg border-none bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-500 focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Search documentation..."/>
+</label>
+<div class="size-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUODS9ieOGBtyK8bW4ZE_fO-NlSLkzR9GjFyDpwY2ltWmYhVs-bS64UuJ2O3z4Bk-Fy5V7EuIgi_8ouVAH6gmTemUmupGzphrQxCIGWBPQRUCyWLzJv03BepnoBHwptcUQM0R9jVumJm4jSqt8vaIaBSo-L71MMwUi0AnKjaAxPBwu-BSysojr9zrM9625Z0Z7r8_9sOE2s684O4SdFtGVJX2_j5yDgePPhJSvE8tphLDJRXw71BkOoYTPjd9pMer2FeLXLd3PiyY"/>
+</div>
+</div>
+</header>
+<div class="flex flex-1 w-full max-w-[1440px] mx-auto">
+<!-- Sidebar Navigation -->
+<aside class="hidden lg:flex flex-col w-64 border-r border-slate-200 dark:border-slate-800 p-6 sticky top-[65px] h-[calc(100vh-65px)] overflow-y-auto">
+<div class="flex items-center gap-3 mb-8">
+<div class="size-10 rounded-lg bg-white dark:bg-slate-800 p-2 shadow-sm border border-slate-200 dark:border-slate-700">
+<img class="w-full h-full" data-alt="Google Chrome colorful circular logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYq1Z7OnBGFX1ihNuZMizyzmpQ6vn-unAoI-U6_Skw3jWAARIJ4s2VT1lPU2fj1u9yzjati3t2rwNffexjSXWg7eKL_8dU7qhpjJiJhxL7wdsX9fH7u-SdP3YBm5mbX1Z1n1-sESVKQSDSTj1DpFwGH5WrtlS_EnwnXJnAawmBMqSkX8n6VprVlkl_OvLUGTXM2w7S4ocSItLwEd4x2n8mL7bMY_baHj5Re0zgTrAqnpqLP2pQ5O6djJJa-QqeIjmbNaX2z7qJM0o"/>
+</div>
+<div>
+<h3 class="font-bold text-sm">Google Chrome</h3>
+<p class="text-xs text-slate-500">v120.0.6099</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-semibold text-sm" href="#overview">
+<span class="material-symbols-outlined text-lg">info</span> Overview
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#history">
+<span class="material-symbols-outlined text-lg">history</span> History
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#specs">
+<span class="material-symbols-outlined text-lg">settings</span> Specs
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#features">
+<span class="material-symbols-outlined text-lg">star</span> Key Features
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#procons">
+<span class="material-symbols-outlined text-lg">thumb_up</span> Pros &amp; Cons
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#market">
+<span class="material-symbols-outlined text-lg">bar_chart</span> Market Share
+                </a>
+<div class="h-px bg-slate-200 dark:border-slate-800 my-4"></div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">description</span> API Docs
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">code</span> GitHub Source
+                </a>
+</nav>
+<div class="mt-auto pt-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white rounded-lg py-2.5 font-bold text-sm shadow-lg shadow-primary/20 transition-all">
+                    Download Chrome
+                </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 px-6 py-8 lg:px-12">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Browsers</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Google Chrome</span>
+</div>
+<!-- Hero Section -->
+<section class="mb-12" id="overview">
+<div class="flex flex-col md:flex-row gap-8 items-start justify-between border-b border-slate-200 dark:border-slate-800 pb-10">
+<div class="flex-1">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-primary/10 text-primary text-[10px] uppercase font-bold px-2 py-1 rounded">Web Browser</span>
+<span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] uppercase font-bold px-2 py-1 rounded">Chromium</span>
+<span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] uppercase font-bold px-2 py-1 rounded">Cross-platform</span>
+</div>
+<h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">Google Chrome</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed mb-6">
+                            A fast, secure, and free web browser, built for the modern web. Google Chrome is based on the Chromium open-source project and has become the de facto standard for web development and browsing worldwide.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-2.5 bg-primary text-white rounded-lg font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-lg">download</span> Get Chrome
+                            </button>
+<button class="px-6 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                                View Source
+                            </button>
+</div>
+</div>
+<div class="w-full md:w-48 aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center p-8 border border-primary/10">
+<img class="w-full h-full drop-shadow-xl" data-alt="Official Google Chrome logo in high definition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp78I_bGLzjzr2xR5dIlLEwWnQ8TXlgvG3YMd2Sxiuz-3Nxr6lHsWow8da0pqAZClnZw3nvRhrweD6ZiNsMNRwRRywuUQNaSWgpKhu3TGj3T2kxPTYSEvAHXTTCxrsg430JTL6mxMGeUBFz0u-d-Kb5-QylsgvBST3nSIni-2P0IFdFyxxsaf2xwzV4trakPzbFU63PqIqVTDJyJGYJeatiiNyfac6IdQnDcoaREgjHrah1LgLGCR8p7zcIuwRGXpOtT1gZ_MR-9Q"/>
+</div>
+</div>
+</section>
+<!-- Grid Content -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+<!-- Left/Main Column -->
+<div class="xl:col-span-2 space-y-12">
+<!-- History Section -->
+<section id="history">
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span> History
+                        </h2>
+<div class="relative border-l-2 border-slate-200 dark:border-slate-800 ml-3 space-y-8 pb-4">
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 size-4 rounded-full bg-primary border-4 border-background-light dark:border-background-dark"></div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">2008: Initial Release</h4>
+<p class="text-sm text-slate-500 mt-1">Chrome 1.0 was released on Windows, introducing the V8 JavaScript engine.</p>
+</div>
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 size-4 rounded-full bg-slate-300 dark:bg-slate-600 border-4 border-background-light dark:border-background-dark"></div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">2010: Chrome OS &amp; Web Store</h4>
+<p class="text-sm text-slate-500 mt-1">Expansion into the operating system market and centralized web extensions.</p>
+</div>
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 size-4 rounded-full bg-slate-300 dark:bg-slate-600 border-4 border-background-light dark:border-background-dark"></div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">2016: Chrome 50+</h4>
+<p class="text-sm text-slate-500 mt-1">Focus shifted to mobile dominance and Material Design integration.</p>
+</div>
+</div>
+</section>
+<!-- Key Features -->
+<section id="features">
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">star</span> Key Features
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3">speed</span>
+<h4 class="font-bold mb-2">V8 JavaScript Engine</h4>
+<p class="text-sm text-slate-500">High-performance open-source engine that compiles JS to native machine code.</p>
+</div>
+<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3">security</span>
+<h4 class="font-bold mb-2">Sandboxing</h4>
+<p class="text-sm text-slate-500">Each tab runs in a separate process, preventing one crash from affecting others.</p>
+</div>
+<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3">sync</span>
+<h4 class="font-bold mb-2">Omnibox Sync</h4>
+<p class="text-sm text-slate-500">Unified search and address bar with seamless sync across all devices.</p>
+</div>
+<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3">extension</span>
+<h4 class="font-bold mb-2">Massive Ecosystem</h4>
+<p class="text-sm text-slate-500">Largest collection of extensions and themes through the Chrome Web Store.</p>
+</div>
+</div>
+</section>
+<!-- Dev Feature: Code Example -->
+<section>
+<div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950">
+<div class="flex items-center justify-between px-4 py-2 bg-slate-900/50 border-b border-slate-800">
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-red-500"></span>
+<span class="size-3 rounded-full bg-yellow-500"></span>
+<span class="size-3 rounded-full bg-green-500"></span>
+<span class="ml-2 text-xs text-slate-400 font-mono">Chrome Developer API</span>
+</div>
+<button class="text-xs text-slate-400 hover:text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">content_copy</span> Copy
+                                </button>
+</div>
+<div class="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
+<pre class="text-blue-400">chrome.<span class="text-white">tabs</span>.<span class="text-green-400">query</span>({active: <span class="text-orange-400">true</span>, currentWindow: <span class="text-orange-400">true</span>}, <span class="text-purple-400">function</span>(tabs) {</pre>
+<pre class="text-slate-500">  // Send message to current active tab</pre>
+<pre class="text-blue-400">  chrome.<span class="text-white">tabs</span>.<span class="text-green-400">sendMessage</span>(tabs[<span class="text-orange-400">0</span>].id, {action: <span class="text-yellow-300">"get_data"</span>});</pre>
+<pre class="text-blue-400">});</pre>
+</div>
+</div>
+</section>
+<!-- Pros/Cons -->
+<section id="procons">
+<h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">balance</span> Pros &amp; Cons
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-4">
+<h4 class="font-bold text-green-600 dark:text-green-400 flex items-center gap-2">
+<span class="material-symbols-outlined">add_circle</span> Advantages
+                                </h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span>
+<span>Industry-leading JavaScript performance</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span>
+<span>Best-in-class developer tools suite</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-green-500 text-lg">check</span>
+<span>Highly compatible with all web standards</span>
+</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-red-600 dark:text-red-400 flex items-center gap-2">
+<span class="material-symbols-outlined">remove_circle</span> Disadvantages
+                                </h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-red-500 text-lg">close</span>
+<span>High RAM/Memory consumption</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-red-500 text-lg">close</span>
+<span>Privacy concerns over data tracking</span>
+</li>
+<li class="flex items-start gap-3 text-sm">
+<span class="material-symbols-outlined text-red-500 text-lg">close</span>
+<span>Resource heavy on older hardware</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Sidebar Column -->
+<div class="space-y-8">
+<!-- Specs Card -->
+<section class="bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 p-6" id="specs">
+<h3 class="font-bold text-lg mb-6">Technical Specs</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-800">
+<span class="text-sm text-slate-500">Rendering Engine</span>
+<span class="text-sm font-semibold">Blink (Webkit Fork)</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-800">
+<span class="text-sm text-slate-500">JS Engine</span>
+<span class="text-sm font-semibold">V8</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-800">
+<span class="text-sm text-slate-500">Creator</span>
+<span class="text-sm font-semibold">Google</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-800">
+<span class="text-sm text-slate-500">First Release</span>
+<span class="text-sm font-semibold">Sept 2, 2008</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-800">
+<span class="text-sm text-slate-500">Platform</span>
+<span class="text-sm font-semibold">Win, Mac, Linux, Mobile</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-sm text-slate-500">License</span>
+<span class="text-sm font-semibold">Freeware (Chromium: BSD)</span>
+</div>
+</div>
+</section>
+<!-- Market Share -->
+<section class="bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 p-6" id="market">
+<h3 class="font-bold text-lg mb-6">Market Share (2024)</h3>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Chrome</span>
+<span class="text-primary">64.8%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 64.8%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Safari</span>
+<span>18.6%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-slate-400" style="width: 18.6%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+<span>Edge</span>
+<span>5.2%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-slate-400" style="width: 5.2%"></div>
+</div>
+</div>
+<p class="text-[10px] text-slate-400 italic">Source: StatCounter Global Stats - Browser Market Share</p>
+</div>
+</section>
+<!-- Community Links -->
+<section class="bg-primary/5 rounded-xl border border-primary/20 p-6">
+<h3 class="font-bold text-lg mb-4">Ecosystem</h3>
+<div class="space-y-3">
+<a class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+<span class="text-sm font-medium">Documentation</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-sm">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">hub</span>
+<span class="text-sm font-medium">Chromium Project</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-sm">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-sm" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">groups</span>
+<span class="text-sm font-medium">Developer Forum</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-sm">open_in_new</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="mt-20 py-10 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-slate-500 text-sm">
+<p>© 2024 TechDoc Open Repository</p>
+<span class="hidden md:inline">•</span>
+<a class="hover:text-primary" href="#">Terms</a>
+<span class="hidden md:inline">•</span>
+<a class="hover:text-primary" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<button class="size-10 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary/20 hover:text-primary transition-all">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="size-10 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary/20 hover:text-primary transition-all">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+</body></html>

@@ -7,12 +7,14 @@ A premium, systematic categorization of core engineering assets, frameworks, and
 ## 💎 Recent Major Updates (March 2026)
 
 ### 🌍 The "World of Languages" Registry
+
 - **Comprehensive Indexing**: Added a massive repository of programming languages ranging from low-level systems (C, C++, Rust, Zig) to modern AI-focused and functional languages (Mojo, Elixir, Clojure).
 - **Dedicated View**: Launched the `/languages` dedicated registry page with glassmorphic layout and live filtering.
 - **Distribution Metrics**: Integrated advanced stat cards for tracking systems-level, modern web, and functional paradigms.
 - **Asset Verification**: Upgraded language logs with high-fidelity branding (official logos for Java, Scala, COBOL, etc.) and precise release/version metadata.
 
 ### 🎨 UI/UX Refinements
+
 - **Premium Aesthetics**: Transitioned from `rounded-2xl` to a more refined `rounded-xl` design system across all major components.
 - **Glassmorphism**: Implemented premium backdrop-blur effects and transparency layers in the Programming Languages registry and System Hero.
 - **Enhanced Sidebar**:
@@ -21,6 +23,7 @@ A premium, systematic categorization of core engineering assets, frameworks, and
 - **Responsive Systems**: Re-engineered page layouts to remove redundant margin constraints, ensuring seamless transition across ultra-wide and mobile viewports.
 
 ### ⚙️ Navigation & Robustness
+
 - **Global Scroll Restoration**: Integrated `ScrollToTop` for consistent UX across deep-dive detail pages.
 - **Route Optimization**: Unified path aliases (`@`) and refined route matching for technical registries.
 
@@ -47,6 +50,7 @@ A premium, systematic categorization of core engineering assets, frameworks, and
 ---
 
 ## 📈 System Status
+
 - **Total Indexed Units**: ~50+ and growing.
 - **Verified Assets**: 100% data integrity for core technical registries.
 - **Uptime Monitoring**: Integrated system status indicators.
